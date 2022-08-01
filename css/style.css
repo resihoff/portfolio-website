@@ -23,11 +23,13 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 2.75em;
 font-weight: 800;
+text-align: center;
 }
 
 h2 {
   font-size:2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -53,15 +55,16 @@ img {
 header {
 background-color: #DBD7D2;
 padding: 10px;
+text-align: center;
 box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.63);
 -webkit-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.63);
 -moz-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.63);
 position: fixed;
-width: 100%
+width: 100%;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 103px;
 }
 
 footer {
@@ -139,7 +142,7 @@ a:active { /* Selected link */
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero h1 {
+#hero {
   text-align: center;
 }
 
@@ -186,7 +189,7 @@ nav > ul > li > a:active {
   width: 100%;
 }
 
-#footer h1 {
+#contact {
   text-align: center;
 }
 
@@ -202,3 +205,76 @@ nav > ul > li > a:active {
 .social > ul > li > a {
   padding: 0 15px;
 }
+
+/* ===============================
+Medium devices (640px and larger)
+ ============================== */
+
+ @media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+
+}
+
+body {
+  font-size: 18px;
+}
+
+#hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about h3 {margin-top: 0;}
+ }
+   /* ===============================
+   Large devices (1024px and larger)
+    ============================== */
+
+    @media only screen and (min-width: 1024px) {
+.col-lg-7 {
+  width: 59.33%;
+  float: left;
+  padding: 10px;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+float: left;
+padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+    }
+    /* ===============================
+    X-large devices (1440px and larger)
+     ============================== */
+
+     @media only screen and (min-width: 1440px) {
+
+     }
