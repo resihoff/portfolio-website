@@ -205,17 +205,9 @@ nav>ul>li>a:active {
   text-align: center;
 }
 
-.social>ul {
-  list-style-type: none;
-  padding 0;
-}
-
-.social>ul>li {
+.social {
   display: inline-block;
-}
-
-.social>ul>li>a {
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .sidebar {
@@ -224,7 +216,13 @@ nav>ul>li>a:active {
   margin: 10px;
 }
 
-.img {
+.animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.headshot {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -276,15 +274,6 @@ css animation
 
 .sun {
   animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-mid {
-  animation: 30s cloud-move infinite alternate linear;
 }
 
 /* ===============================
