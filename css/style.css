@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (Timberwolf): #DBD7D2
 Secondary Color (Amaranth M P): #873166
-Tertiary Color (Columbia Blue): #CADFE3
+Tertiary Color (Ming): #00707A
 */
 * {
   box-sizing: border-box;
@@ -57,8 +57,7 @@ img {
 
 header {
   background-color: #DBD7D2;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 0 4px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.63);
@@ -67,7 +66,7 @@ header {
 }
 
 main {
-  padding-top: 103px;
+  padding-top: 65px;
 }
 
 footer {
@@ -76,8 +75,9 @@ footer {
 }
 
 a {
-  color: #ff7f50;
+  color: #00707A;
   text-decoration: none;
+  font-weight: 400;
   /* No underlining */
 }
 
@@ -114,6 +114,7 @@ a:active {
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
+  color: #DBD7D2;
 }
 
 .button:active {
@@ -166,16 +167,43 @@ a:active {
   padding: 10px 9;
   font-weight: 600;
   color: #4a4a4a;
-  font-size: 2.25em;
+  font-size: 2em;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(135,49,102,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul {
   list-style-type: none;
   padding 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -238,40 +266,6 @@ nav>ul>li>a:active {
 }
 
 /* ===============================
-nav animation
- ============================== */
-
-/* Brackets go out */
-navigation.brackets a:before, navigation.brackets a:after
-{
-    position: absolute;
-    opacity: 0;
-    font-size: 35px;
-    top: 0px;
-    transition: all 0.3s;
-}
-
-navigation.brackets a:before
-{
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
-}
-
-navigation.brackets a:after
-{
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
-}
-
-navigation.brackets a:hover:before, navigation.brackets a:hover:after
-{
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-/* ===============================
 css animation
  ============================== */
 
@@ -292,6 +286,22 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   nav {
