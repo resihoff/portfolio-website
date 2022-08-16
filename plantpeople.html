@@ -16,14 +16,17 @@
 <body id="plantpeople" class="project">
   <header id="header">
     <div class="container">
+      <div class="navtoggle" id+"myNavtoggle">
       <a href="index.html" class="logo">Theresa Hoffmann</a>
       <nav>
-        <ul>
+        <ul class="navigation brackets">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
   <main>
@@ -358,7 +361,9 @@
       </p>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  
 </body>
 
 </html>
