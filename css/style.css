@@ -243,6 +243,7 @@ nav>ul>li>a:active {
 .social {
   display: inline-block;
   padding: 15px;
+  font-size: 2em;
 }
 
 .sidebar {
@@ -337,6 +338,10 @@ Medium devices (640px and larger)
     width: 25%;
     float: right;
     display: inline ;
+  }
+
+#plantpeople {
+    padding-top: 65px;
   }
 
   #about h3 {
