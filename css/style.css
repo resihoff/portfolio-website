@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Timberwolf): #DBD7D2
+Primary Color (Platinum): #E5E2DE
 Secondary Color (Amaranth M P): #873166
 Tertiary Color (Ming): #00707A
 */
@@ -11,15 +11,16 @@ Tertiary Color (Ming): #00707A
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.4;
 }
 
@@ -56,7 +57,7 @@ img {
 }
 
 header {
-  background-color: #DBD7D2;
+  background-color: #e5e2de;
   padding: 10px 0 4px;
   box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: 0px 5px 7px -1px rgba(0, 0, 0, 0.63);
@@ -70,28 +71,25 @@ main {
 }
 
 footer {
-  background-color: #DBD7D2;
+  background-color: #e5e2de;
   padding: 10px;
 }
 
 a {
-  color: #00707A;
+  color: #006871;
   text-decoration: none;
   font-weight: 400;
-  /* No underlining */
 }
 
 a:visited {
   /* visited link */
   text-decoration: none;
-  /* No underlining */
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #984629;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
@@ -106,7 +104,7 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #69264F;
+  border-bottom: 2px solid #69264f;
   transition: 0.2s opacity;
 }
 
@@ -114,7 +112,7 @@ a:active {
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
-  color: #DBD7D2;
+  color: #e5e2de;
 }
 
 .button:active {
@@ -174,7 +172,8 @@ a:active {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -193,7 +192,7 @@ a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(135,49,102,0.5);
+  border-top: 1px solid rgba(135, 49, 102, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -202,7 +201,7 @@ a:active {
 
 nav>ul {
   list-style-type: none;
-  padding 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -219,10 +218,10 @@ nav>ul>li>a:visited {
   /* No underlining */
 }
 
-nav>ul>li>a:hover, a:focus {
-  color: #cc6540;
+nav>ul>li>a:hover,
+a:focus {
+  color: #984629;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 nav>ul>li>a:active {
@@ -230,7 +229,7 @@ nav>ul>li>a:active {
 }
 
 #hero {
-  background-color: #DBD7D2;
+  background-color: #e5e2de;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -247,7 +246,7 @@ nav>ul>li>a:active {
 }
 
 .sidebar {
-  background-color: #CADFE3;
+  background-color: #cadfe3;
   padding: 15px;
   margin: 10px;
 }
@@ -267,20 +266,6 @@ nav>ul>li>a:active {
 }
 
 /* ===============================
-css animation
- ============================== */
-
-@keyframes color-change {
-  0% {fill: #fde29c;}
-  50% {fill: #fccf5f;}
-  100% {fill: #fab80f;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-/* ===============================
 Medium devices (640px and larger)
  ============================== */
 @media only screen and (min-width: 640px) {
@@ -297,7 +282,7 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -337,10 +322,10 @@ Medium devices (640px and larger)
   .sidebar {
     width: 25%;
     float: right;
-    display: inline ;
+    display: inline;
   }
 
-#plantpeople {
+  #plantpeople {
     padding-top: 65px;
   }
 
