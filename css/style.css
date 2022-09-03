@@ -8,6 +8,10 @@ Tertiary Color (Ming): #00707A
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
@@ -59,9 +63,9 @@ img {
 header {
   background-color: #e5e2de;
   padding: 10px 0 4px;
-  box-shadow: 0px 6px 13px 0px rgba(105,104,104,0.63);
-  -webkit-box-shadow: 0px 6px 13px 0px rgba(105,104,104,0.63);
-  -moz-box-shadow: 0px 6px 13px 0px rgba(105,104,104,0.63);
+  box-shadow: 0px 6px 13px 0px rgba(105, 104, 104, 0.63);
+  -webkit-box-shadow: 0px 6px 13px 0px rgba(105, 104, 104, 0.63);
+  -moz-box-shadow: 0px 6px 13px 0px rgba(105, 104, 104, 0.63);
   position: fixed;
   width: 100%;
 }
@@ -154,8 +158,32 @@ a:active {
   font-size: 2em;
 }
 
+nav {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav > ul > li {
+  box-sizing: border-box;
+}
+
+nav > ul > li > a {
+  padding: 0 15px; /* 0 on top and bottom, 15px left and right */
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
 .navtoggle li:not(:last-child) {
-  display: none;
+  display: none; /* Hide all navigation elements except for hamburger icon in mobile view */
 }
 
 .navtoggle,
@@ -176,13 +204,16 @@ a:active {
 }
 
 .navtoggle.responsive li {
+  box-sizing: border-box;
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(135, 49, 102, 0.5);
+  margin: 30px 0;
+  text-align: center;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+  margin: 0;
 }
 
 nav>ul {
@@ -202,16 +233,6 @@ nav>ul>li>a:visited {
   color: ff7f50;
   text-decoration: none;
   /* No underlining */
-}
-
-nav>ul>li>a:hover,
-a:focus {
-  color: #984629;
-  text-decoration: underline;
-}
-
-nav>ul>li>a:active {
-  color: #994c30;
 }
 
 #hero {
@@ -245,13 +266,37 @@ nav>ul>li>a:active {
   margin-right: auto;
 }
 
-/* ===============================
-Medium devices (640px and larger)
- ============================== */
+/* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    margin: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -262,39 +307,16 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  #hero {
-    padding: 60px;
-  }
-
-  #hero span {
-    display: block;
-  }
-
-  .col-md-6 {
-    width: 50%;
+  main {
+    padding-top: 76px;
   }
 
   [class*="col-"] {
+    width: 50%;
     float: left;
+    box-sizing: border-box;
     padding: 10px;
+    overflow: auto;
   }
 
   .row::after {
@@ -303,41 +325,73 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  .sidebar {
-    width: 25%;
-    float: right;
-    display: inline;
+  .col-md-12 {
+    width: 100%;
   }
 
-  #plantpeople {
-    padding-top: 65px;
+  #hero {
+    height: 450px;
   }
 
-  #about h3 {
-    margin-top: 0;
+  #hero span {
+    display: block;
+  }
+
+  .tools-subsection {
+    margin: 0 20px;
+  }
+
+  .tools-parent {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+  }
+
+  .headshot {
+    max-width: 300px;
   }
 }
 
-/* ===============================
-   Large devices (1024px and larger)
-    ============================== */
+/* large devices (1024px and larger) */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sidebar {
-    width: 30%;
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  #hero {
+    height: 275px;
+  }
+
+  #hero h1 {
+    font-size: 42px;
+  }
+
+  #skills h2 {
+    text-align: right;
+    margin-top: 18px;
+  }
+
+  .tools-parent {
+    padding-left: 0;
+    justify-content: flex-start;
   }
 }
 
