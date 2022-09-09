@@ -30,25 +30,56 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <!-- first whole section block marked in orange in the example -->
-      <div>
-        <!-- first container aka wrapper marked in yellow in the example -->
-        <h1>About</h1>
-      </div><!-- end of first container aka wrapper marked in yellow in the example -->
-    </div><!-- end of first whole section block marked in orange in the example -->
-    <div class="container">
-      <!-- second whole section block marked in orange in the example -->
-      <div>
-        <!-- second container aka wrapper marked in yellow in the example -->
-        <picture>
-          <source srcset="img/headshot_x3.jpeg" media="(max-width: 767px)" class="headshot">
-          <img src="img/headshot_x2.jpeg" alt="Theresa Hoffmann a woman with short shaggy brown hair and glasses wearing a black T-shirt" class="headshot">
-        </picture>
+    <div>
+      <div id="background">
+        <div class="container">
+        <h1>About Me</h1>
+      <div class="row">
         <div class="row">
-          <!-- outer row for columns marked in green in the example -->
-          <div>
-            <!-- left column marked in teal in the example -->
+        <div class="col-lg-4">
+        <picture>
+          <source srcset="img/headshot_x3.jpeg" media="(max-width: 767px)">
+          <img src="img/headshot_x2.jpeg" alt="Theresa Hoffmann a woman with short brown hair and glasses wearing a black T-shirt">
+        </picture>
+      </div>
+          <div class="col-lg-4">
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>Competitor Analysis</li>
+              <li>User Surveys</li>
+              <li>User Interviews</li>
+              <li>Content Audits</li>
+              <li>Usability Tests</li>
+              <li>Personas</li>
+              <li>User Flows</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Frontend Development</li>
+            </ul>
+          </div>
+        </div>
+          <div class="col-lg-4">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Adobe XD</li>
+              <li>Figma</li>
+              <li>Balsamiq</li>
+              <li>Marvel</li>
+              <li>FigJam</li>
+              <li>Miro</li>
+              <li>OptimalSort</li>
+              <li>LucidChart</li>
+              <li>Gloomaps</li>
+              <li>Google Forms</li>
+            </ul>
+          </div>
+      </div>
+    <div class="center">
+      <a href="files/resume.pdf" target="_blank" class="button">View My Resume</a>
+    </div>
+        </div>
+      </div>
+          <div class="container">
             <h2>My Story</h2>
             <p>
               I’m a UX Researcher with a background in English literature. I started my career as a storyteller. Working in PR for higher education, I researched to understand what set my clients’ stories apart from the competition. I immersed myself
@@ -74,59 +105,16 @@
             <p>
               I’m always looking for opportunities to engage in creative problem solving. If you’ve got a job or freelance opportunity or would like to collaborate on a project, send me a message.
             </p>
-            <div class="center">
-              <a href="files/resume.pdf" target="_blank" class="button">View My Resume</a>
-            </div>
-          </div><!-- end of left column marked in teal in the example -->
-          <div>
-            <!-- right column marked in teal in the example -->
-            <h2>Skills & Tools</h2>
-            <div class="row">
-              <!-- inner row for columns marked in green in the example as a breakpoint for smaller screen size -->
-              <div class="col-md-6">
-                <!-- column marked in teal in the example as a breakpoint for smaller screen size -->
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>Competitor Analysis</li>
-                  <li>User Surveys</li>
-                  <li>User Interviews</li>
-                  <li>Content Audi ts</li>
-                  <li>Usability Tests</li>
-                  <li>Personas</li>
-                  <li>User Flows</li>
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Frontend Development</li>
-                </ul>
-              </div><!-- end of column marked in teal in the example -->
-              <div class="col-md-6">
-                <!-- column marked in teal in the example as a breakpoint for smaller screen size -->
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Adobe XD</li>
-                  <li>Figma</li>
-                  <li>Balsamiq</li>
-                  <li>Marvel</li>
-                  <li>FigJam</li>
-                  <li>Miro</li>
-                  <li>OptimalSort</li>
-                  <li>LucidChart</li>
-                  <li>Gloomaps</li>
-                </ul>
-              </div><!-- end of column marked in teal in the example -->
-            </div><!-- end of inner row for columns marked in green in the example -->
-          </div><!-- end of right column marked in teal in the example -->
-        </div><!-- end of outer row marked in green in the example -->
-      </div><!-- end of second container aka wrapper marked in yellow in the example -->
-    </div><!-- end of second whole section block marked in orange in the example -->
+          </div>
+      </div>
   </main>
   <footer id="contact">
     <div>
       <h2>Get in Touch</h2>
-      <p>
+      <p class="email">
         Do you like my work and want to discuss opportunities? Please get in touch:
       </p>
-      <p>
+      <p class="email">
         <a href="mailto:theresahoffmann.ux@gmail.com">theresahoffmann.ux@gmail.com</a>
       </p>
       <div class="social">
@@ -140,7 +128,7 @@
           <i class="fa-brands fa-square-behance"></i>
         </a>
       </div>
-      <p>
+      <p class="copyright">
         Copyright Theresa Hoffmann 2022
       </p>
     </div>
