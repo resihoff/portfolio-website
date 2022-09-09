@@ -146,16 +146,32 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
+#about .row {
+  margin: 10px;
+}
+
 #hero {
   text-align: center;
 }
 
+#background {
+  background-color: #e5e2de;
+  padding: 25px;
+}
+
 .logo {
   text-align: center;
-  padding: 10px 9;
+  padding: 40px 9;
   font-weight: 600;
   color: #4a4a4a;
-  font-size: 2em;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.email {
+  font-size: 22px;
 }
 
 nav {
@@ -262,8 +278,6 @@ nav>ul>li>a:visited {
   width: 30%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Medium devices (640px and larger) */
@@ -274,6 +288,10 @@ nav>ul>li>a:visited {
 
   header {
     text-align: unset;
+  }
+
+  .logo {
+    font-size: 1.75em;
   }
 
   nav {
@@ -325,8 +343,13 @@ nav>ul>li>a:visited {
     display: table;
   }
 
-  .col-md-12 {
-    width: 100%;
+  #about .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about h3 {
+    margin: 10px 0;
   }
 
   #hero {
@@ -335,16 +358,6 @@ nav>ul>li>a:visited {
 
   #hero span {
     display: block;
-  }
-
-  .tools-subsection {
-    margin: 0 20px;
-  }
-
-  .tools-parent {
-    display: flex;
-    justify-content: center;
-    padding: 0 100px;
   }
 
   .headshot {
@@ -383,19 +396,4 @@ nav>ul>li>a:visited {
   #hero h1 {
     font-size: 42px;
   }
-
-  #skills h2 {
-    text-align: right;
-    margin-top: 18px;
-  }
-
-  .tools-parent {
-    padding-left: 0;
-    justify-content: flex-start;
-  }
 }
-
-/* ===============================
-    X-large devices (1440px and larger)
-     ============================== */
-@media only screen and (min-width: 1440px) {}
