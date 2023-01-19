@@ -56,6 +56,13 @@ h5 {
   text-transform: uppercase;
 }
 
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5px 0px;
+}
+
 img {
   width: 100%;
 }
@@ -280,6 +287,11 @@ nav>ul>li>a:visited {
   display: block;
 }
 
+.bluebg {
+  background-color: rgba(218, 236, 250, 0.5);
+  padding: 20px;
+}
+
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   body {
@@ -363,6 +375,11 @@ nav>ul>li>a:visited {
   .headshot {
     max-width: 300px;
   }
+}
+
+#tstp2 .row {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* large devices (1024px and larger) */
